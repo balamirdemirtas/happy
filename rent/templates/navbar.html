@@ -1,0 +1,92 @@
+{% load static i18n %}
+    <div class="topbar d-none d-sm-block">
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-12 col-md-5">
+                    <div class="topbar-left">
+                        <div class="topbar-text">
+                            {% trans 'Best Choice Yachtinge Hoş Geldiniz' %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-7">
+                    <div class="list-unstyled topbar-right">
+                        <ul class="topbar-sosmed">
+                             <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+								  <input name="next" type="hidden" value="{{ redirect_to }}" />
+									{% get_current_language as LANGUAGE_CODE %}
+									{% get_available_languages as LANGUAGES %}
+									{% get_language_info_list for LANGUAGES as languages %}
+									{% for language in languages %}
+									  <button style=" color:white; padding: 0px 5px; background-color: Transparent;background-repeat:no-repeat;border: none;cursor:pointer;overflow: hidden;" type="submit" name="language" value="{{ language.code }}"
+										class="btn header_button ml-auto {% if language.code == LANGUAGE_CODE %}selected{% endif %}">
+										{{ language.code }}
+									  </button>
+									{% endfor %}
+								</form>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END NAVBAR TOP -->
+    <nav class="navbar navbar-hover navbar-expand-lg navbar-soft">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="{% static 'web.png' %}" alt="" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav99">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav99">
+                <ul class="navbar-nav  mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> {% trans 'Kiralık' %} </a>
+                        <ul class="dropdown-menu animate fade-up">
+                            {% for cat in categorys %}
+                            <li><a class="dropdown-item" href="{{cat.get_absolute_url}}"> {{cat.name}} </a>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> {% trans 'Satılık' %} </a>
+                        <ul class="dropdown-menu animate fade-up">
+                            {% for sell in sellCategorys %}
+                            <li><a class="dropdown-item" href="{{sell.get_absolute_url}}"> {{sell.name}} </a>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/rota/list/"> {% trans 'Rotalar' %}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/special/turk-kiyilari/"> {% trans 'Türk Kıyıları' %} </a></li>
+                    <li class="nav-item"><a class="nav-link" href="/special/yunan-adalari/"> {% trans 'Yunan Adaları' %} </a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog/guncel/"> {% trans 'Blog' %} </a></li>
+                    <li class="nav-item"><a class="nav-link" href="/rent/contact/"> {% trans 'İletişim' %} </a></li>
+                </ul>
+
+                <div class="top-search navigation-shadow">
+                    <div class="container">
+                        <div class="input-group ">
+                            <form action="#">
+
+                                <div class="row no-gutters mt-3">
+                                    <div class="col">
+                                        <input class="form-control border-secondary border-right-0 rounded-0"
+                                            type="search" value="" placeholder="Search " id="example-search-input4">
+                                    </div>
+                                    <div class="col-auto">
+                                        <a class="btn btn-outline-secondary border-left-0 rounded-0 rounded-right"
+                                            href="/search-result.html">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Search content bar.// -->
+            </div> <!-- navbar-collapse.// -->
+        </div>
+    </nav>

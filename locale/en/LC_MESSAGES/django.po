@@ -1,0 +1,445 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-13 21:04+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: blog/templates/history/blog_detail.html:88
+#: blog/templates/history/blog_list.html:112
+msgid "Tekeneler"
+msgstr ""
+
+#: blog/templates/history/blog_detail.html:114
+#: blog/templates/history/blog_list.html:141
+#: rent/templates/central/contact.html:139
+#: rent/templates/central/index.html:301 rota/templates/tour/rota_list.html:120
+#: special/templates/medium/special_list.html:125
+msgid "Tekenenizi Kiralamak Ya da Satmakmı İstiyorsunuz"
+msgstr ""
+
+#: blog/templates/history/blog_detail.html:116
+msgid ""
+"Profesional Ekibimiz Bu Konuda Size Destek Olacaktır... Bizimle İletişime "
+"Geçiniz."
+msgstr ""
+
+#: blog/templates/history/blog_detail.html:121
+#: blog/templates/history/blog_list.html:148
+#: rent/templates/central/contact.html:36
+#: rent/templates/central/contact.html:47
+#: rent/templates/central/contact.html:146 rent/templates/central/index.html:63
+#: rent/templates/central/index.html:89 rent/templates/central/index.html:115
+#: rent/templates/central/index.html:308 rent/templates/navbar.html:64
+#: rota/templates/tour/rota_list.html:127
+#: special/templates/medium/special_detail.html:124
+#: special/templates/medium/special_list.html:132
+msgid "İletişim"
+msgstr "Contact"
+
+#: blog/templates/history/blog_list.html:90
+#: special/templates/medium/special_list.html:71
+msgid "Daha Fazlası"
+msgstr "More"
+
+#: blog/templates/history/blog_list.html:143
+#: rent/templates/central/contact.html:141
+#: rent/templates/central/index.html:303 rota/templates/tour/rota_list.html:122
+#: special/templates/medium/special_detail.html:119
+#: special/templates/medium/special_list.html:127
+msgid ""
+"Profesional Ekibimiz Bu Konuda Size Destek Olacaktır... Bizimle İletişime "
+"Geçiniz"
+msgstr "Our Profesional Team Will Support You In This Subject ... Contact Us"
+
+#: happy/settings.py:133
+msgid "English"
+msgstr ""
+
+#: happy/settings.py:134
+msgid "Turkish"
+msgstr ""
+
+#: happy/settings.py:135
+msgid "German"
+msgstr ""
+
+#: happy/settings.py:136
+msgid "Russian"
+msgstr ""
+
+#: rent/templates/central/contact.html:53
+#: rent/templates/central/detail.html:389
+#: sell/templates/ship/sell_detail.html:328
+msgid "İsminiz"
+msgstr "Name"
+
+#: rent/templates/central/contact.html:60
+#: rent/templates/central/detail.html:395
+#: sell/templates/ship/sell_detail.html:334
+msgid "Email"
+msgstr "Email"
+
+#: rent/templates/central/contact.html:67
+msgid "Mesajınız"
+msgstr "Messages"
+
+#: rent/templates/central/contact.html:71
+msgid "Gönder"
+msgstr "Send"
+
+#: rent/templates/central/contact.html:80
+msgid "Bilgilermiz"
+msgstr "Our Information"
+
+#: rent/templates/central/contact.html:115
+msgid "Sosyal Medya"
+msgstr "Social media"
+
+#: rent/templates/central/detail.html:319
+msgid "Günlük Fiyat"
+msgstr ""
+
+#: rent/templates/central/detail.html:343
+msgid "Tekne Özelliklerimiz"
+msgstr "Daily Price"
+
+#: rent/templates/central/detail.html:349 rent/templates/central/show.html:87
+#: sell/templates/ship/sell_detail.html:275
+#: sell/templates/ship/sell_list.html:89
+msgid "Uzunluk"
+msgstr "Length"
+
+#: rent/templates/central/detail.html:350
+#: rent/templates/central/detail.html:495 rent/templates/central/show.html:81
+#: sell/templates/ship/sell_detail.html:387
+#: sell/templates/ship/sell_list.html:83
+msgid "Kişi"
+msgstr "Person"
+
+#: rent/templates/central/detail.html:351
+msgid "Televizyon"
+msgstr "Television"
+
+#: rent/templates/central/detail.html:352
+#: rent/templates/central/detail.html:392
+#: sell/templates/ship/sell_detail.html:331
+msgid "Telefon"
+msgstr "Telephone"
+
+#: rent/templates/central/detail.html:353
+msgid "Wi-Fİ"
+msgstr "Wi-Fİ"
+
+#: rent/templates/central/detail.html:354
+msgid "Kumanya"
+msgstr "Stores"
+
+#: rent/templates/central/detail.html:359
+msgid "Can Yeleği"
+msgstr "Life ves"
+
+#: rent/templates/central/detail.html:360 rent/templates/central/show.html:69
+#: sell/templates/ship/sell_list.html:71
+msgid "Duş"
+msgstr "Shower"
+
+#: rent/templates/central/detail.html:361
+msgid "Tecrübeli Personel"
+msgstr "Experienced Staff"
+
+#: rent/templates/central/detail.html:362
+#: rent/templates/central/detail.html:501 rent/templates/central/show.html:75
+#: sell/templates/ship/sell_detail.html:283
+#: sell/templates/ship/sell_detail.html:393
+#: sell/templates/ship/sell_list.html:77
+msgid "Kabin"
+msgstr "Cabin"
+
+#: rent/templates/central/detail.html:363
+msgid "Klima"
+msgstr "Air conditioning"
+
+#: rent/templates/central/detail.html:364
+msgid "Kabin Tipleri"
+msgstr "Cabin Type"
+
+#: rent/templates/central/detail.html:397
+#: rent/templates/central/detail.html:399
+msgid "Giriş"
+msgstr "Enter"
+
+#: rent/templates/central/detail.html:401
+#: rent/templates/central/detail.html:403
+msgid "Çıkış"
+msgstr "Exit"
+
+#: rent/templates/central/detail.html:407
+msgid "Yetişkin"
+msgstr "Adult"
+
+#: rent/templates/central/detail.html:428
+msgid "Çocuk"
+msgstr "Child"
+
+#: rent/templates/central/detail.html:450
+msgid "Rezervasyon"
+msgstr "Rezervation"
+
+#: rent/templates/central/detail.html:479 rent/templates/navbar.html:53
+msgid "Satılık"
+msgstr "Sales"
+
+#: rent/templates/central/detail.html:489
+#: sell/templates/ship/sell_detail.html:381
+msgid "Banyo"
+msgstr "Shower"
+
+#: rent/templates/central/detail.html:507
+#: sell/templates/ship/sell_detail.html:399
+msgid "Metre"
+msgstr "Meter"
+
+#: rent/templates/central/index.html:55 rent/templates/central/index.html:82
+#: rent/templates/central/index.html:108
+msgid "Kendinizi Mavinin Özgürlüğüne Bırakın"
+msgstr "Immerse Yourself in the Freedom of Blue"
+
+#: rent/templates/central/index.html:58 rent/templates/central/index.html:86
+#: rent/templates/central/index.html:112
+msgid "Güvenli Tekne Kiralama"
+msgstr "Safe Boat Rental"
+
+#: rent/templates/central/index.html:154
+msgid "Kiralık Teknelerimiz"
+msgstr "Our Rental Boats"
+
+#: rent/templates/central/index.html:156
+#, fuzzy
+#| msgid "Kiralık Teknelerimiz"
+msgid "Popüler Teknelerimiz"
+msgstr "Our Rental Boats"
+
+#: rent/templates/central/index.html:177 rent/templates/central/show.html:60
+#: rent/templates/navbar.html:45
+msgid "Kiralık"
+msgstr "Rent"
+
+#: rent/templates/central/index.html:213
+msgid "Gecelik Fiyat"
+msgstr "Nightly Price"
+
+#: rent/templates/central/index.html:242
+msgid "Neden Best Choice Yatchting"
+msgstr "Why Best Choice Yatchting ?"
+
+#: rent/templates/central/index.html:244
+msgid ""
+"Best Choice Yachting tekne kiralama ve satma alanında faaliye gösteren ve "
+"mavi yolculuk tutkunlarına en uygun şartlarda en kaliteli hizmeti "
+"sunabilmeyi hedefleyen, Fethiye, Göcek, Marmaris, Bozburun, Datça, Bodrum, "
+"Kos , Rodos başlangıç ve bitişli mavi tur organizasyonları yapan yılın 12 "
+"ayı açık Marmaris merkezli bir firmadır"
+msgstr "Best Choice Yachting operates in the field of boat rental and sales and aims to provide the best quality service to the blue voyage enthusiasts under the most favorable conditions, Fethiye, Göcek, Marmaris, Bozburun, Datça, Bodrum, Kos, Rhodes, open 12 months of the year, organizing blue voyages with start and finishes. is a company based"
+
+#: rent/templates/central/index.html:248
+msgid ""
+"Firmamız değişik tip ve boylarda başta gulet olmak üzere trawler, motoryat, "
+"yelkenli ve katamaran kiralama ve satış hizmeti vermekte ve kabin kiralama "
+"programları organize etmektedir. Portföyümüzde yer alan yaklaşık 100 tekne "
+"ile; donatanı olduğumuz, sezonluk kiralama yaparak pazarladıklarımız, ana "
+"acentesi olduklarımız ve parça başı çalıştığımız tekneler bulunmaktadır. "
+"Portföyümüze tekneleri eklerken maksimum misafir memnuniyetini "
+"hedeflemekteyiz. Mavi yolculukta tekne kalitesi ve kullanılan malzemeler her "
+"ne kadar iyi ve kaliteli olursa olsun, esas görevin personele düştüğünün "
+"bilincindeyiz. Bu bağlamda güler yüzlü, kibar ve sektörde uzun yıllar hizmet "
+"vermiş konusunda deneyimli ekipler ile çalışmaya özen göstermekteyiz"
+msgstr "Our company provides rental and sales services, especially gulets, trawlers, motor yachts, sailboats and catamarans in different types and sizes and organizes cabin rental programs. With about 100 boats in our portfolio; There are boats that we are the owner of, that we market by making seasonal leases, that we are the main agency and that we work on piecemeal basis. While adding boats to our portfolio, we aim for maximum guest satisfaction. Regardless of the quality of the boat and the materials used in the blue voyage, we are aware that the main task falls on the personnel. In this context, we take care to work with friendly, polite and experienced teams that have served in the sector for many years."
+
+#: rent/templates/central/index.html:252
+#, fuzzy
+#| msgid "Kiralık Teknelerimiz"
+msgid "Tüm Kiralık Guletler"
+msgstr "Our Rental Boats"
+
+#: rent/templates/central/index.html:267
+msgid "Yorumlar"
+msgstr "Comments"
+
+#: rent/templates/central/index.html:269
+msgid "Güzel Yorumlarınız İçin Teşekkür Ederiz"
+msgstr "Thank You For Your Nice Comments"
+
+#: rent/templates/navbar.html:8
+msgid "Best Choice Yachtinge Hoş Geldiniz"
+msgstr "Welcome to Best Choice Yachting"
+
+#: rent/templates/navbar.html:60
+msgid "Rotalar"
+msgstr "Routes"
+
+#: rent/templates/navbar.html:61
+msgid "Türk Kıyıları"
+msgstr "Turkish coasts"
+
+#: rent/templates/navbar.html:62
+msgid "Yunan Adaları"
+msgstr "Greek Islands"
+
+#: rent/templates/navbar.html:63
+msgid "Blog"
+msgstr "Blog"
+
+#: rota/templates/tour/rota_list.html:66
+msgid "Başlangıç Limanı"
+msgstr "Starting Port"
+
+#: rota/templates/tour/rota_list.html:88
+msgid "Çıkışlı"
+msgstr "Output"
+
+#: sell/templates/ship/sell_detail.html:271
+msgid "Üretici"
+msgstr "Producer"
+
+#: sell/templates/ship/sell_detail.html:272
+msgid "Model"
+msgstr "Moddel"
+
+#: sell/templates/ship/sell_detail.html:273
+msgid "Yılı"
+msgstr "Year"
+
+#: sell/templates/ship/sell_detail.html:274
+msgid "Bayrak"
+msgstr "Flag"
+
+#: sell/templates/ship/sell_detail.html:276
+msgid "Beam"
+msgstr "Beam"
+
+#: sell/templates/ship/sell_detail.html:277
+msgid "Draft"
+msgstr "Draft"
+
+#: sell/templates/ship/sell_detail.html:278
+msgid "Genişlik"
+msgstr "Width"
+
+#: sell/templates/ship/sell_detail.html:279
+msgid "Ağırlık"
+msgstr "Weight"
+
+#: sell/templates/ship/sell_detail.html:280
+msgid "Sertifika"
+msgstr "Certificate"
+
+#: sell/templates/ship/sell_detail.html:281
+msgid "FirstLaunch"
+msgstr "FirstLaunch"
+
+#: sell/templates/ship/sell_detail.html:282
+#: sell/templates/ship/sell_detail.html:302
+msgid "Durum"
+msgstr "Status"
+
+#: sell/templates/ship/sell_detail.html:284
+msgid "Wc"
+msgstr "Wc"
+
+#: sell/templates/ship/sell_detail.html:289
+msgid "Satış Tipi"
+msgstr "Sales Type"
+
+#: sell/templates/ship/sell_detail.html:290
+msgid "Satış"
+msgstr "Sales"
+
+#: sell/templates/ship/sell_detail.html:291
+msgid "Dümen"
+msgstr "Rudder"
+
+#: sell/templates/ship/sell_detail.html:292
+msgid "Motor Üreticisi"
+msgstr "Motor Company"
+
+#: sell/templates/ship/sell_detail.html:293
+msgid "No Of Engines"
+msgstr "No Of Engines"
+
+#: sell/templates/ship/sell_detail.html:294
+msgid "Motor Çalışma Saati"
+msgstr "Engine Hours"
+
+#: sell/templates/ship/sell_detail.html:295
+msgid "Hp"
+msgstr "Hp"
+
+#: sell/templates/ship/sell_detail.html:296
+msgid "Yakıt"
+msgstr "Fuel"
+
+#: sell/templates/ship/sell_detail.html:297
+msgid "Tekne Gövde"
+msgstr "Boat Hull"
+
+#: sell/templates/ship/sell_detail.html:298
+msgid "Yakıt Kapasitesi"
+msgstr "Fuel Capacity"
+
+#: sell/templates/ship/sell_detail.html:299
+msgid "Temiz Su Kapasitesi"
+msgstr "Clean Water Capacity"
+
+#: sell/templates/ship/sell_detail.html:300
+msgid "Metarial Deck"
+msgstr "Metarial Deck"
+
+#: sell/templates/ship/sell_detail.html:301
+msgid "Headroom"
+msgstr "Headroom"
+
+#: sell/templates/ship/sell_detail.html:343
+msgid "Teklif Al"
+msgstr "Get Offer"
+
+#: sell/templates/ship/sell_detail.html:359
+msgid "Benzer Tekneler"
+msgstr "Similar Boats"
+
+#: sell/templates/ship/sell_list.html:38
+#, fuzzy
+#| msgid "Kiralık Teknelerimiz"
+msgid "Satılık Teknelerimiz"
+msgstr "Our Rental Boats"
+
+#: sell/templates/ship/sell_list.html:40
+msgid "Hayalinizdeki Tekne Sizi bekliyor"
+msgstr "Your Dream Boat is waiting for you"
+
+#: special/templates/medium/special_detail.html:86
+msgid "Tekneler"
+msgstr "Boats"
+
+#: special/templates/medium/special_detail.html:117
+msgid "Teknenizi Kiralamak Ya da Satmakmı İstiyorsunuz"
+msgstr "Do You Want To Rent Or Sell Your Boat ?"
+
+#: special/templates/medium/special_list.html:93
+#, fuzzy
+#| msgid "Kiralık Teknelerimiz"
+msgid "Teknelerimiz"
+msgstr "Our Rental Boats"

@@ -1,0 +1,320 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block seo %}
+
+
+<title>Happy choice</title>
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="" />
+
+<link rel="canonical" href=""/>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<meta name="robots" content="index,follow"/>
+
+<meta name="googlebot" content="index,follow"/>
+
+<meta name="author" content="İhsan Gürol Demirtaş">
+
+<meta name="publisher" content="2020.01" />
+
+{% endblock %}
+
+
+
+
+{% block content %}
+    <div class="slider-container">
+        <div class="container-slider-image-full  ">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators d-none">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active banner-max-height">
+                        <img class="d-block w-100" src="{% static '01.jpg' %}" alt="First slide">
+                        <div class="carousel-caption banner__slide-overlay d-flex h-100">
+                            <div class="carousel__content">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8 col-md-12 col-sm-12 text-center">
+                                            <div class="slider__content-title ">
+                                                <h2 data-animation="fadeInDown" data-delay=".2s" data-duration="1000ms"
+                                                    class="text-white animated fadeInDown">
+                                                    {% trans 'Kendinizi Mavinin Özgürlüğüne Bırakın' %}</h2>
+                                                <p data-animation="fadeInUp" data-delay=".4s" data-duration="1000ms"
+                                                    class="text-white animated fadeInUp">
+                                                    {% trans 'Güvenli Tekne Kiralama' %}
+                                                </p>
+                                                <a href="/" data-animation="fadeInUp" data-delay=".6s"
+                                                    data-duration="1000ms"
+                                                    class="btn btn-primary text-uppercase animated fadeInUp">
+                                                    {% trans 'İletişim' %}
+                                                    <i class="fa fa-angle-right arrow-btn "></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item banner-max-height">
+                        <img class="d-block w-100" src="{% static '02.jpg' %}" alt="Second slide">
+                        <div class="carousel-caption banner__slide-overlay d-flex h-100">
+                            <div class="carousel__content">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8 col-md-12 col-sm-12 text-center">
+                                            <div class="slider__content-title ">
+                                                <h2 data-animation="animated fadeInDown"
+                                                    class="text-white animated fadeInDown">
+                                                    {% trans 'Kendinizi Mavinin Özgürlüğüne Bırakın' %}</h2>
+                                                <p data-animation="animated fadeInUp"
+                                                    class="text-white animated fadeInUp ">
+
+                                                    {% trans 'Güvenli Tekne Kiralama' %}
+                                                </p>
+                                                <a href="/" class="btn btn-primary text-uppercase animated fadeInUp">
+                                                    {% trans 'İletişim' %}
+                                                    <i class="fa fa-angle-right arrow-btn "></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item banner-max-height">
+                        <img class="d-block w-100" src="{% static '03.jpg' %}" alt="Third slide">
+                        <div class="carousel-caption banner__slide-overlay d-flex h-100">
+                            <div class="carousel__content">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8 col-md-12 col-sm-12 text-center">
+                                            <div class="slider__content-title ">
+                                                <h2 data-animation="animated fadeInDown"
+                                                    class="text-white animated fadeInDown">
+                                                    {% trans 'Kendinizi Mavinin Özgürlüğüne Bırakın' %}</h2>
+                                                <p data-animation="animated fadeInUp"
+                                                    class="text-white animated fadeInUp ">
+
+                                                    {% trans 'Güvenli Tekne Kiralama' %}
+                                                </p>
+                                                <a href="/" class="btn btn-primary text-uppercase animated fadeInUp">
+                                                    {% trans 'İletişim' %}
+                                                    <i class="fa fa-angle-right arrow-btn "></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span> -->
+                <span class="carousel-control-nav-prev">
+                    <i class="fa fa-2x fa-angle-left"></i>
+                </span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span> -->
+                <span class="carousel-control-nav-next">
+                    <i class="fa fa-2x fa-angle-right"></i>
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+    <!-- END CAROUSEL -->
+    <div class="clearfix"></div>
+
+ <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-6 mx-auto">
+                    <div class="title__head">
+                        <h2 class="text-center text-capitalize" style="font-family: 'Poppins', sans-serif;">
+                            {% trans 'Kiralık Teknelerimiz' %}
+                        </h2>
+                        <p class="text-center text-capitalize">{% trans 'Popüler Teknelerimiz' %}</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--=========================================
+=            Section Gallery two            =
+==========================================-->
+            <div class="card__image-filter">
+                <div class="row">
+                    <div class="filtr-container">
+                        {% for pro in products %}
+                        <div class="col-md-6 col-lg-4 filtr-item" data-category="2, 4" data-title="">
+
+                            <div class="card__image card__box-v1">
+                                <div class="card__image-header h-250">
+                                    <div class="ribbon text-capitalize">{{pro.category}}</div>
+                                    <a href="{{pro.get_absolute_url}}">
+                                    <img src="{% if pro.image %}{{ pro.image.url }}{% else %}{% endif %}" alt="" class="img-fluid w100 img-transition">
+                                    </a>
+                                </div>
+                                <div class="card__image-body">
+                                    <span class="badge badge-primary text-capitalize mb-2">{% trans 'Kiralık' %}</span>
+                                    <h6 class="text-capitalize">
+                                        {{pro.name}}
+                                    </h6>
+
+                                    <ul class="list-inline card__content">
+                                        <li class="list-inline-item">
+                                            <span>
+                                                banyo <br>
+                                                <i class="fa fa-bath"></i> {{pro.shower}}
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                Kişi <br>
+                                                <i class="fa fa-user"></i> {{pro.person}}
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                Kabin <br>
+                                                <i class="fa fa-bed"></i> {{pro.kabin}}
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                metre <br>
+                                                 <i class="fa fa-arrows-h"></i> {{pro.meter}}
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card__image-footer">
+                                    <ul class="list-inline my-auto">
+                                        <li class="list-inline-item ">
+                                            <a href="#">
+                                                {% trans 'Gecelik Fiyat' %}
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                    <ul class="list-inline my-auto ml-auto">
+                                        <li class="list-inline-item">
+
+                                            <h6>€ {{pro.price}}</h6>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+ <section class="home__about" style="background-image: url({% static 'why.jpg'%});background-position: center; background-repeat: no-repeat;background-size: cover;background-attachment: fixed;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="title__leading">
+                        <h2 class="text-capitalize"> {% trans 'Neden Best Choice Yatchting' %}</h2>
+                        <p>
+                            {% trans 'Best Choice Yachting tekne kiralama ve satma alanında faaliye gösteren ve mavi yolculuk tutkunlarına en uygun şartlarda en kaliteli hizmeti sunabilmeyi hedefleyen, Fethiye, Göcek, Marmaris, Bozburun, Datça, Bodrum, Kos , Rodos başlangıç ve bitişli mavi tur organizasyonları yapan yılın 12 ayı açık Marmaris merkezli bir firmadır' %}
+
+                        </p>
+                        <p>
+                            {% trans 'Firmamız değişik tip ve boylarda başta gulet olmak üzere trawler, motoryat, yelkenli ve katamaran kiralama ve satış hizmeti vermekte ve kabin kiralama programları organize etmektedir. Portföyümüzde yer alan yaklaşık 100 tekne ile; donatanı olduğumuz, sezonluk kiralama yaparak pazarladıklarımız, ana acentesi olduklarımız ve parça başı çalıştığımız tekneler bulunmaktadır. Portföyümüze tekneleri eklerken maksimum misafir memnuniyetini hedeflemekteyiz. Mavi yolculukta tekne kalitesi ve kullanılan malzemeler her ne kadar iyi ve kaliteli olursa olsun, esas görevin personele düştüğünün bilincindeyiz. Bu bağlamda güler yüzlü, kibar ve sektörde uzun yıllar hizmet vermiş konusunda deneyimli ekipler ile çalışmaya özen göstermekteyiz' %}
+
+                        </p>
+
+                        <a href="/rent/gulet" class="btn btn-primary mt-3 text-capitalize"> {% trans 'Tüm Kiralık Guletler' %}
+                            <i class="fa fa-angle-right ml-3 "></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-6 mx-auto">
+                    <div class="title__head">
+                        <h2 class="text-center text-capitalize">
+                            {% trans 'Yorumlar' %}
+                        </h2>
+                        <p class="text-center text-capitalize">{% trans 'Güzel Yorumlarınız İçin Teşekkür Ederiz' %}</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="testimonial owl-carousel owl-theme">
+                {% for x in comments %}
+                <div class="item testimonial__block">
+                    <div class="testimonial__block-card bg-reviews">
+                        <p>
+                            {{x.text}}
+                        </p>
+                    </div>
+                    <div class="testimonial__block-users">
+                        <div class="testimonial__block-users-img">
+                            <img src="{% if x.image %}{{ x.image.url }}{% else %}{% endif %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="testimonial__block-users-name">
+                            {{x.name}} <br>
+                            <span>{{x.city}}</span>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+    <section class="cta-v1 py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-9">
+                    <h2 class="text-uppercase text-white">{% trans 'Tekenenizi Kiralamak Ya da Satmakmı İstiyorsunuz' %}</h2>
+                    <p class="text-capitalize text-white">
+                        {% trans 'Profesional Ekibimiz Bu Konuda Size Destek Olacaktır... Bizimle İletişime Geçiniz' %}
+                    </p>
+
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="btn btn-light text-uppercase ">{% trans 'İletişim' %}
+                        <i class="fa fa-angle-right ml-3 arrow-btn "></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+
+{% block jss %}
+{% endblock %}

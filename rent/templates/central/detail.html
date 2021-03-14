@@ -1,0 +1,537 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block seo %}
+
+
+<title>{{product.title}} | Best Choice Yachting</title>
+
+<meta name="keywords" content="" />
+
+<meta name="description" content="" />
+
+
+<link rel="canonical" href=""/>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<meta name="robots" content="index,follow"/>
+<meta name="googlebot" content="index,follow"/>
+
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="bg-theme-overlay">
+            <section class="section__breadcrumb ">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <h2 class="text-capitalize text-white">{{product.name}}</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+ <section class="single__Detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="slider__image__detail-large owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image %}{{ product.image.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image2 %}{{ product.image2.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image3 %}{{ product.image3.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image4 %}{{ product.image4.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image5 %}{{ product.image5.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image6 %}{{ product.image6.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image7 %}{{ product.image7.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image8 %}{{ product.image8.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image9 %}{{ product.image9.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image10 %}{{ product.image10.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image11 %}{{ product.image11.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image12 %}{{ product.image12.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image13 %}{{ product.image13.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image14 %}{{ product.image14.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image15 %}{{ product.image15.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image16 %}{{ product.image16.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image17 %}{{ product.image17.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-large-one">
+                                <img src="{% if product.image18 %}{{ product.image18.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider__image__detail-thumb owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image %}{{ product.image.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image2 %}{{ product.image2.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image3 %}{{ product.image3.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image4 %}{{ product.image4.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image5 %}{{ product.image5.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image6 %}{{ product.image6.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image7 %}{{ product.image7.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image8 %}{{ product.image8.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image9 %}{{ product.image9.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image10 %}{{ product.image10.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image11 %}{{ product.image11.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image12 %}{{ product.image12.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image13 %}{{ product.image13.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image14 %}{{ product.image14.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image15 %}{{ product.image15.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image16 %}{{ product.image16.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image17 %}{{ product.image17.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider__image__detail-thumb-one">
+                                <img src="{% if product.image18 %}{{ product.image18.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                            </div>
+                        </div>
+                    </div>
+                    <section class="wrap__heading">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-md-2">
+                                    <div class="pricing-item">
+                                        <div class="pricing-price">
+                                            <span class="">
+                                                <span class="pricing-currency">€ </span>{{product.price}}
+                                            </span>
+                                            <span class="">
+                                                <span class="pricing-period">Mayıs</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="pricing-item">
+                                        <div class="pricing-price">
+                                            <span class="">
+                                                <span class="pricing-currency">€ </span>{{product.price}}
+                                            </span>
+                                            <span class="">
+                                                <span class="pricing-period">Haziran</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="pricing-item">
+                                        <div class="pricing-price">
+                                            <span class="">
+                                                <span class="pricing-currency">€  </span>{{product.price}}
+                                            </span>
+                                            <span class="">
+                                                <span class="pricing-period">Temmuz</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="pricing-item">
+                                        <div class="pricing-price">
+                                            <span class="">
+                                                <span class="pricing-currency">€  </span>{{product.price}}
+                                            </span>
+                                            <span class="">
+                                                <span class="pricing-period">Ağustos</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="pricing-item">
+                                        <div class="pricing-price">
+                                            <span class="">
+                                                <span class="pricing-currency">€  </span>{{product.price}}
+                                            </span>
+                                            <span class="">
+                                                <span class="pricing-period">Eylül</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="pricing-item">
+                                        <div class="pricing-price">
+                                            <span class="">
+                                                <span class="pricing-currency">€  </span>{{product.price}}
+                                            </span>
+                                            <span class="">
+                                                <span class="pricing-period">Ekim</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="row">
+                        <div class="col-md-9 col-lg-9">
+                            <div class="single__detail-title mt-4">
+                                <h3 class="text-capitalize">{% trans 'Günlük Fiyat' %}</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <div class="single__detail-price mt-4">
+                                <h3 class="text-capitalize text-gray">{{product.price}} €</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- DESCRIPTION -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="single__detail-desc">
+                                <h6 class="text-capitalize detail-heading">{{product.name}}</h6>
+                                <div class="">
+                                    <p>{{product.info | safe}}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <!-- PROPERTY DETAILS SPEC -->
+                            <div class="single__detail-features">
+                                <h6 class="text-capitalize detail-heading">{% trans 'Tekne Özelliklerimiz' %}</h6>
+                                <!-- INFO PROPERTY DETAIL -->
+                                <div class="property__detail-info">
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-6">
+                                            <ul class="property__detail-info-list list-unstyled">
+                                                <li><b>{% trans 'Uzunluk' %} :</b> {{product.meter}} Metre</li>
+                                                <li><b>{% trans 'Kişi' %} :</b> {{product.person}} Kişilik</li>
+                                                <li><b>{% trans 'Televizyon' %} :</b> Var </li>
+                                                <li><b>{% trans 'Telefon' %} :</b> Var</li>
+                                                <li><b>{% trans 'Wi-Fİ' %} :</b> Var</li>
+                                                <li><b>{% trans 'Kumanya' %} :</b> Yolcuya Ait</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <ul class="property__detail-info-list list-unstyled">
+                                                <li><b>{% trans 'Can Yeleği' %} :</b> Var</li>
+                                                <li><b>{% trans 'Duş' %} :</b> {{product.shower}} </li>
+                                                <li><b>{% trans 'Tecrübeli Personel' %} :</b> Kaptan ve Usta Gemici</li>
+                                                <li><b>{% trans 'Kabin' %} :</b> {{product.kabin}}</li>
+                                                <li><b>{% trans 'Klima' %} :</b> {{product.aircon}}</li>
+                                                <li><b>{% trans 'Kabin Tipleri' %} :</b> {{product.kabin_type}}</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- END INFO PROPERTY DETAIL -->
+                            </div>
+                            <!-- END PROPERTY DETAILS SPEC -->
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </div>
+                    <!-- END DESCRIPTION -->
+                </div>
+                <div class="col-lg-4">
+
+                    <div class="sticky-top">
+                        <!-- PROFILE AGENT -->
+                        <div class="profile__agent mb-30">
+                            <div class="profile__agent__group">
+                                <form method="post">
+                                {% csrf_token %}
+                                <div class="profile__agent__body">
+                                    <div class="form-group">
+                                        <input name="name" type="text" class="form-control" placeholder="{% trans 'İsminiz' %}" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input name="telephone" type="text" class="form-control" placeholder="{% trans 'Telefon' %}" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input name="email" type="text" class="form-control" placeholder="{% trans 'Email' %}" required>
+                                    </div>
+                                    <p>{% trans 'Giriş' %}</p>
+                                    <div class="form-group">
+                                        <input name="enter_date" type="date" class="form-control" placeholder="{% trans 'Giriş' %}" required>
+                                    </div>
+                                    <p>{% trans 'Çıkış' %}</p>
+                                    <div class="form-group">
+                                        <input name="out_date" type="date" class="form-control" placeholder="{% trans 'Çıkış' %}" required>
+                                    </div>
+                                    <div class="form-group">
+                                            <div class="form_select">
+                                                <select name="adult" class="form-control md_noborder_right" title="{% trans 'Yetişkin' %}" data-header="Yetişkin" required>
+                                                    <option value="0">Yetişkin</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">9</option>
+                                                    <option value="9">10</option>
+                                                    <option value="10">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    <div class="form-group">
+                                            <div class="form_select">
+                                                <select name="children" class="form-control md_noborder_right" title="{% trans 'Çocuk' %}" data-header="Yetişkin" required>
+                                                    <option value="0">Çocuk</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">9</option>
+                                                    <option value="9">10</option>
+                                                    <option value="10">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="profile__agent__footer">
+                                    <div class="form-group mb-0">
+                                        <button type="submit" name="btnSubmit" class="btn btn-primary text-capitalize btn-block"> {% trans 'Rezervasyon' %} <i
+                                                class="fa fa-paper-plane ml-1"></i></button>
+
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIMILIAR PROPERTY -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="similiar__item">
+                        <h6 class="text-capitalize detail-heading">
+                            similiar properties
+                        </h6>
+                        <div class="similiar__property-carousel owl-carousel owl-theme">
+                            {% for y in smilar %}
+                            <div class="item">
+                                <!-- TWO -->
+                                <div class="card__image">
+                                    <div class="card__image-header h-250">
+                                        <div class="ribbon text-capitalize">{{y.category}}</div>
+                                        <a href="{{y.get_absolute_url}}">
+                                        <img src="{% if y.image %}{{ y.image.url }}{% else %}{% endif %}" alt="" class="img-fluid w100 img-transition">
+                                        </a>
+                                        <div class="info">{% trans 'Satılık' %}</div>
+                                    </div>
+                                    <div class="card__image-body">
+
+                                        <h6 class="text-capitalize">
+                                            <a href="{{y.get_absolute_url}}">{{y.name}}</a>
+                                        </h6>
+                                         <ul class="list-inline card__content">
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'Banyo' %} <br>
+                                                <i class="fa fa-bath"></i> {{y.shower}}
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'Kişi' %} <br>
+                                                <i class="fa fa-user"></i> {{y.person}}
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'Kabin' %} <br>
+                                                <i class="fa fa-bed"></i> {{y.kabin}}
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'Metre' %} <br>
+                                                 <i class="fa fa-arrows-h"></i> {{y.meter}}
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <div class="card__image-footer">
+                                        <ul class="list-inline my-auto ml-auto">
+                                            <li class="list-inline-item">
+
+                                                <h6 class="text-primary">€ {{y.general_price}}</h6>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END SIMILIAR PROPERTY -->
+        </div>
+    </section>
+
+{% endblock %}
+
+
+{% block jss %}
+{% endblock %}

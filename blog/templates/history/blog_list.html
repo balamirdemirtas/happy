@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block seo %}
+
+
+<title>Blog | Best Choice Yachting</title>
+
+<meta name="keywords" content="" />
+
+<meta name="description" content="" />
+
+
+<link rel="canonical" href=""/>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<meta name="robots" content="index,follow"/>
+<meta name="googlebot" content="index,follow"/>
+
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="bg-theme-overlay">
+            <section class="section__breadcrumb ">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <h2 class="text-capitalize text-white">blog</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+ <section>
+        <div class="container">
+            <div class="row">
+                <!-- BLOG START -->
+                <div class="col-lg-8">
+                    <div class="row">
+                        {% for pro in posts %}
+                        <div class="col-md-6 col-lg-6">
+                            <div class="blog__grid">
+                                <!-- BLOG  -->
+                                <div class="card__image">
+                                    <div class="card__image-header h-250">
+                                        <a href="{{pro.get_absolute_url}}">
+                                        <img ht src="{% if pro.image %}{{ pro.image.url }}{% else %}{% endif %}" alt=""
+                                            class="img-fluid w100 img-transition">
+                                        </a>
+                                    </div>
+                                    <div class="card__image-body">
+                                        <!-- <span class="badge badge-secondary p-1 text-capitalize mb-3">May 08, 2019
+                                        </span> -->
+                                        <h6 class="text-capitalize">
+                                            <a href="{{pro.get_absolute_url}}">
+                                            {{pro.title}}
+                                            </a>
+                                        </h6>
+                                        <p class=" mb-0">
+                                            {{pro.smiler | safe}}
+
+                                        </p>
+
+
+                                    </div>
+                                    <div class="card__image-footer">
+                                        <ul class="list-inline my-auto">
+                                            <li class="list-inline-item">
+
+                                                <a href="#">
+                                                    {{pro.author}}
+                                                </a>
+
+
+                                            </li>
+
+                                        </ul>
+                                        <ul class="list-inline my-auto ml-auto">
+                                            <li class="list-inline-item">
+                                                <a href="{{pro.get_absolute_url}}" class="btn btn-sm btn-primary "><small
+                                                        class="text-white ">{% trans 'Daha Fazlası' %}<i
+                                                            class="fa fa-angle-right ml-1"></i></small></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- END BLOG -->
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <!-- END BLOG  -->
+
+                <!-- WIDGET BLOG -->
+                <div class="col-lg-4">
+                    <div class="sticky-top">
+
+                        <aside>
+                            <div class="widget__sidebar">
+                                <div class="widget__sidebar__header">
+                                    <h6 class="text-capitalize">{% trans 'Tekeneler' %}</h6>
+                                </div>
+                                <div class="widget__sidebar__body">
+                                    {% for x in ship %}
+                                    <div class="widget__sidebar__body-img">
+                                        <a href="{{x.get_absolute_url}}">
+                                        <img src="{% if x.image %}{{ x.image.url }}{% else %}{% endif %}" alt="" class="img-fluid">
+                                        </a>
+                                        <div class="widget__sidebar__body-heading">
+                                            <h6 class="text-capitalize">
+                                                {{x.name}}
+                                            </h6>
+                                        </div>
+                                        <span class="badge badge-secondary p-1 text-capitalize mb-1">{{x.author}}</span>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-v1 py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-9">
+                    <h2 class="text-uppercase text-white">{% trans 'Tekenenizi Kiralamak Ya da Satmakmı İstiyorsunuz' %}</h2>
+                    <p class="text-capitalize text-white">
+                        {% trans 'Profesional Ekibimiz Bu Konuda Size Destek Olacaktır... Bizimle İletişime Geçiniz' %}
+                    </p>
+
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="btn btn-light text-uppercase ">{% trans 'İletişim' %}
+                        <i class="fa fa-angle-right ml-3 arrow-btn "></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+
+{% block jss %}
+{% endblock %}

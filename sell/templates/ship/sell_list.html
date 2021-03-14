@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block seo %}
+
+
+<title>Satılık Tekneler</title>
+
+<meta name="keywords" content="" />
+
+<meta name="description" content="" />
+
+
+<link rel="canonical" href=""/>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<meta name="robots" content="index,follow"/>
+<meta name="googlebot" content="index,follow"/>
+
+{% endblock %}
+
+
+
+
+{% block content %}
+ <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-6 mx-auto">
+                    <div class="title__head">
+                        <h2 class="text-center text-capitalize">
+                            {% trans 'Satılık Teknelerimiz' %}
+                        </h2>
+                        <p class="text-center text-capitalize">{% trans 'Hayalinizdeki Tekne Sizi bekliyor' %}</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--=========================================
+=            Section Gallery two            =
+==========================================-->
+            <div class="card__image-filter">
+                <div class="row">
+                    <div class="filtr-container">
+                        {% for pro in products %}
+                        <div class="col-md-6 col-lg-4 filtr-item" data-category="2, 4" data-title="">
+
+                            <div class="card__image card__box-v1">
+                                <div class="card__image-header h-250">
+                                    <div class="ribbon text-capitalize">{{pro.category}}</div>
+                                    <a href="{{pro.get_absolute_url}}">
+                                    <img src="{% if pro.image %}{{ pro.image.url }}{% else %}{% endif %}" alt="" class="img-fluid w100 img-transition">
+                                    </a>
+                                    <div class="info">Satılık</div>
+                                </div>
+                                <div class="card__image-body">
+                                    <h6 class="text-capitalize">
+                                        {{pro.name}}
+                                    </h6>
+
+                                    <ul class="list-inline card__content">
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'Duş' %} <br>
+                                                <i class="fa fa-bath"></i> {{pro.shower}}
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'Kabin' %} <br>
+                                                <i class="fa fa-bed"></i> 3
+                                            </span>
+                                        </li>
+                                         <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'Kişi' %} <br>
+                                                <i class="fa fa-user"></i> {{pro.person}}
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'Uzunluk' %}<br>
+                                                <i class="fa fa-ship"></i> {{pro.meter}} m
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card__image-footer">
+
+                                    <ul class="list-inline my-auto ml-auto">
+                                        <li class="list-inline-item">
+
+                                            <h6>{{pro.general_price}} €</h6>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+{% endblock %}
+
+
+{% block jss %}
+{% endblock %}
