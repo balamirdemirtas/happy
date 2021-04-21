@@ -62,8 +62,21 @@
                     <li class="nav-item"><a class="nav-link" href="/special/yunan-adalari/"> {% trans 'Yunan Adaları' %} </a></li>
                     <li class="nav-item"><a class="nav-link" href="/blog/guncel/"> {% trans 'Blog' %} </a></li>
                     <li class="nav-item"><a class="nav-link" href="/rent/contact/"> {% trans 'İletişim' %} </a></li>
+                    <ul class="nav-item">
+                             <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+								  <input name="next" type="hidden" value="{{ redirect_to }}" />
+									{% get_current_language as LANGUAGE_CODE %}
+									{% get_available_languages as LANGUAGES %}
+									{% get_language_info_list for LANGUAGES as languages %}
+									{% for language in languages %}
+									  <button style=" color:black; padding: 32px 0px 10px 1px; background-color: Transparent;background-repeat:no-repeat;border: none;cursor:pointer;overflow: hidden;" type="submit" name="language" value="{{ language.code }}"
+										class="btn header_button ml-auto {% if language.code == LANGUAGE_CODE %}selected{% endif %}">
+										{{ language.code }}
+									  </button>
+									{% endfor %}
+								</form>
+                        </ul>
                 </ul>
-
                 <div class="top-search navigation-shadow">
                     <div class="container">
                         <div class="input-group ">

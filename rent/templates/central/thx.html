@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block seo %}
+
+
+<title>Best Choice Yachting </title>
+
+<meta name="description" content="Sevgili Wogo Yachting Müşterimiz Bize Yazın." />
+
+<meta name="keywords" content="İletişim" />
+
+<link rel="canonical" href="/"/>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<meta name="robots" content="index,follow"/>
+<meta name="googlebot" content="index,follow"/>
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+
+    <!-- END NAVBAR -->
+        <!-- BREADCRUMB -->
+        <div class="bg-theme-overlay">
+            <section class="section__breadcrumb ">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <h2 class="text-capitalize text-white">{% trans 'Teşekkürler' %}</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- END BREADCRUMB -->
+    </header>
+    <div class="clearfix"></div>
+
+
+    <!-- ABOUT -->
+    <section class="home__about bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="title__leading">
+                        <!-- <h6 class="text-uppercase">trusted By thousands</h6> -->
+                        <h2 class="text-capitalize">{% trans 'Teşekkürler' %}</h2>
+                        <p>
+                            {% trans 'Talebiniz Bize Ulaşmıştır, Ekibimiz En Kısa Zamanda Sizlere Dönüş Sağlayacaktır.' %}
+                        </p>
+                        <a href="/" class="btn btn-primary mt-3 text-capitalize">Ana Sayfa
+                            <i class="fa fa-angle-right ml-3 "></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__image">
+                        <div class="about__image-bottom">
+                            <div class="about__image-bottom-hover">
+                                <img src="{% static '011.jpg' %}" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END ABOUT -->
+
+{% endblock %}
+
+
+{% block jss %}
+{% endblock %}

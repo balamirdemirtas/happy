@@ -31,23 +31,6 @@ class Product(models.Model):
     vitrin = models.CharField(max_length=200, db_index=True,default='Ürün Vitrin is : vitrin yaz')
     imgseo = models.CharField(max_length=200, db_index=True,default='İmage Seo Alt Ekle')
     image = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
-    image2 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
-    image3 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
-    image4 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
-    image5 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
-    image6 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
-    image7 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
-    image8 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
-    image9 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
-    image10 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
-    image11 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
-    image12 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
-    image13 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
-    image14 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
-    image15 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
-    image16 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
-    image17 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
-    image18 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
     info = RichTextUploadingField()
     index_info = models.TextField(max_length=89,default='89 Karakter En fazla')
     general_price = models.DecimalField(max_digits=10, decimal_places=0)
@@ -78,11 +61,16 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
-    def get_absolute_url(self):
-        return reverse('rent:product_detail', args=[self.slug])
 
 
 
+class Images(models.Model):
+    product=models.ForeignKey(Product,on_delete=models.CASCADE)
+    title = models.CharField(max_length=50,blank=True)
+    image = models.ImageField(blank=True, upload_to='images/')
+
+    def __str__(self):
+        return self.title
 
 class Reservation(models.Model):
     product = models.CharField(max_length=200, db_index=True)

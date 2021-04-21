@@ -48,191 +48,23 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="slider__image__detail-large owl-carousel owl-theme">
+                        {% for picture in images %}
                         <div class="item">
                             <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image %}{{ product.image.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-
+                                <img src="{% if picture.image %}{{ picture.image.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image2 %}{{ product.image2.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image3 %}{{ product.image3.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image4 %}{{ product.image4.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image5 %}{{ product.image5.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image6 %}{{ product.image6.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image7 %}{{ product.image7.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image8 %}{{ product.image8.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image9 %}{{ product.image9.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image10 %}{{ product.image10.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image11 %}{{ product.image11.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image12 %}{{ product.image12.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image13 %}{{ product.image13.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image14 %}{{ product.image14.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image15 %}{{ product.image15.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image16 %}{{ product.image16.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image17 %}{{ product.image17.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-large-one">
-                                <img src="{% if product.image18 %}{{ product.image18.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
 
                     <div class="slider__image__detail-thumb owl-carousel owl-theme">
+                        {% for picture in images %}
                         <div class="item">
                             <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image %}{{ product.image.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
+                                <img src="{% if picture.image %}{{ picture.image.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image2 %}{{ product.image2.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image3 %}{{ product.image3.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image4 %}{{ product.image4.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image5 %}{{ product.image5.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image6 %}{{ product.image6.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image7 %}{{ product.image7.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image8 %}{{ product.image8.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image9 %}{{ product.image9.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image10 %}{{ product.image10.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image11 %}{{ product.image11.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image12 %}{{ product.image12.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image13 %}{{ product.image13.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image14 %}{{ product.image14.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image15 %}{{ product.image15.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image16 %}{{ product.image16.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image17 %}{{ product.image17.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider__image__detail-thumb-one">
-                                <img src="{% if product.image18 %}{{ product.image18.url }}{% else %}{% endif %}" alt="" class="img-fluid w-100 img-transition">
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                     <section class="wrap__heading">
                         <div class="container">

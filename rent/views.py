@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.conf import settings
 from sell.models import SellCategory
 from blog.models import Post
-from rent.models import İndexComment, Product, Contact, Category,Reservation
+from rent.models import İndexComment, Product, Contact, Category,Reservation,Images
 
 
 def index(request):
@@ -32,9 +32,10 @@ def show(request,category_slug = None):
 
 
 
-def detail(request,slug):
+def detail(request,slug,id):
     blog = Post.objects.all().order_by('?')
-    product = get_object_or_404(Product,slug=slug, available=True)
+    product = get_object_or_404(Product,slug=slug,id=id, available=True)
+    images = Images.objects.filter(product_id = id)
     smilar = Product.objects.all().order_by('?')
     if 'btnSubmit' in request.POST:
         if True:
@@ -64,7 +65,7 @@ def detail(request,slug):
             send_mail(subject, contact_message, from_email, to_email, fail_silently=True)
             return redirect('/')
 
-    return render(request,'central/detail.html',{'product':product,'smilar':smilar,'blog':blog})
+    return render(request,'central/detail.html',{'product':product,'smilar':smilar,'blog':blog,'images':images})
 
 def contact(request):
     if 'btnSubmit' in request.POST:
@@ -84,3 +85,8 @@ def contact(request):
             send_mail(subject, contact_message, from_email, to_email, fail_silently=True)
             return redirect('/')
     return render(request,'central/contact.html')
+
+
+
+def thx(request):
+    return render(request,'central/thx.html')
